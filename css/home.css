@@ -314,12 +314,12 @@ span {
         align-items: center;
         width: 100%;
         max-width: 100%;
-        margin: 0 2.5rem;
+        margin: 0 0rem;
         animation: floatImage 4s ease-in-out infinite;
     }
   
     .home-content h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .home-content h2 {
@@ -331,7 +331,7 @@ span {
     }
 
     .home-content p {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 
     .btn-box {
@@ -342,7 +342,7 @@ span {
         width: 100%;
         max-width: 100%;
         height: auto;
-        margin: 0 2.5rem;
+        margin: 0 0rem;
     }
 
     .social-media {
@@ -354,6 +354,7 @@ span {
         width: 100%;
         max-width: 80%;
         height: auto;
-        margin: 0 5rem;
+        margin: 0 4rem;
     }
+
 }
