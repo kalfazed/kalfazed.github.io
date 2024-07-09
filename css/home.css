@@ -44,6 +44,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* flex-direction: column; */
+    /* text-align: center; */
 }
 
 .home-content h1 {
@@ -59,7 +61,8 @@
 
 .home-content .text-animate {
     position: relative;
-    width: 52.8rem;
+    width: 100%;
+    max-width: 52.8rem;
 }
 
 .home-content .text-animate span {
@@ -82,7 +85,8 @@
     position: relative;
     display: flex;
     justify-content: space-between; /*align space between sub-elements*/
-    width: 32.0rem;
+    width: 100%;
+    max-width: 32.0rem;
     height: 5rem
 }
 
@@ -141,7 +145,7 @@ span {
     /* bottom: 4rem; */
     /* width: 170px; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .social-media a {
@@ -167,9 +171,10 @@ span {
 
 /*--------------[home] floating image-------------------*/
 .home-img img {
-    width: 35vw;
+    width: 80%;
+    max-width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 @keyframes floatImage {
@@ -189,4 +194,86 @@ span {
 .heading {
     text-align: center;
     font-size: 4.5rem;
+}
+
+/*--------------[home] Media Queries (for different browser width)------------- */
+@media (max-width: 768px) {
+    .header {
+        padding: 2rem 5%;
+    }
+
+    .navbar a {
+        margin-left: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .home {
+        flex-direction: column;
+        padding: 5rem 9% 2rem;
+    }
+
+    .home-content {
+        width: 100%;
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .home-img {
+        position: center;
+        display: flex;
+        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    .home-img img {
+        position: center;
+        display: flex;
+        align-items: center;
+        width: 80%;
+        max-width: 80%;
+        margin-left: 5rem;
+        animation: floatImage 4s ease-in-out infinite;
+        /* padding: 1.25rem; */
+    }
+  
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .text-animate {
+        width: 100%;
+    }
+
+    .home-content p {
+        font-size: 1.6rem;
+    }
+
+    .btn-box {
+        position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 80%;
+        height: auto;
+        margin: 0 5rem;
+    }
+
+    .social-media {
+        margin-top: 1rem;
+        position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 60%;
+        height: auto;
+        margin: 0 10rem;
+    }
 }
