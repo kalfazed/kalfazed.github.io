@@ -51,6 +51,31 @@
     background: var(--main-color);
 }
 
+
+.education-content {
+    display: flex;
+    align-items: center;
+}
+
+
+.education-content .content-img {
+    display: flex;
+    align-items: center;
+    width: auto; /* Adjust width of the image container */
+    margin-left: 3rem; /* Adjust margin between content and image */
+    margin-right: 3rem; /* Adjust margin between content and image */
+}
+
+.education-content .content-img img {
+    display: block;
+    height: 10vw;
+    /* max-width: 100%; */
+    width: auto;
+    border-radius: 8px; /* Optional: Add border radius to the image */
+    margin-right: 1rem; /* Adjust as needed for spacing between images */
+    margin-bottom: 2rem;
+}
+
 .education-content .content {
     position: relative;
     padding: 1.5rem 1.5rem 1.5rem;
