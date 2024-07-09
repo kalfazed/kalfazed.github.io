@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/*--------------[Global] global setting, color, font, margin-------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /* --bg-color: #081b29; */
+    /* --second-bg-color: #112e42; */
+    /* --text-color: #fff; */
+    /* --main-color: #00abf0; */
+
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html {
+    font-size: 62.5%; /* 62.5% for the default html font size, which is 16px*/
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem; /*Top: 10rem, left/right: 9%, bottom: 2rem*/
+}
+
+/*--------------[header] title, navbar, menu-------------------*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: transparent;  /*yellogreen is good for debug*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+/*--------------[home] home content txt-------------------*/
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content .text-animate {
+    position: relative;
+    width: 52.8rem;
+}
+
+.home-content .text-animate span {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--main-color)
+}
+
+
+.home-content p {
+    font-size: 2.0rem;
+    margin: 2rem 0 2rem;
+    font-style: italic;
+}
+
+
+/*--------------[home] Button, hover, animation setting-------------------*/
+.btn-box { /*Set the rules for the btn inside the btn-box*/
+    position: relative;
+    display: flex;
+    justify-content: space-between; /*align space between sub-elements*/
+    width: 32.0rem;
+    height: 5rem
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background: var(--main-color);
+    border: .2rem solid var(--main-color);
+    border-radius: 4rem;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.btx-box .btn:nth-child(2) {
+    background: transparent;
+    color: var(--main-color);
+}
+
+.btn-box .btn:hover { /*change the color when hover the btn*/
+    color: var(--main-color); 
+}
+
+.btn-box .btn::before { /*Add a prefix in the btn*/
+    content: '';
+    position: absolute; /*This is used to make sure z-index works correctly*/
+    top: 0;
+    left: 0;
+    width: 0; /* The initial width is set to 0 so that it is invisible in the beginning*/
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+
+span {
+    color: var(--main-color);
+}
+
+/*--------------[home] Social media, hover, animation setting-------------------*/
+/* home content social media */
+.social-media {
+    position: absolute;
+    /* bottom: 4rem; */
+    /* width: 170px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+/*--------------[home] floating image-------------------*/
+.home-img img {
+    width: 35vw;
+    animation: floatImage 4s ease-in-out infinite;
+    padding: 20px;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
