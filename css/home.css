@@ -277,3 +277,82 @@ span {
         margin: 0 10rem;
     }
 }
+
+@media (max-width: 768px) {
+    .header {
+        padding: 2rem 5%;
+    }
+
+    .navbar a {
+        margin-left: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .home {
+        flex-direction: column;
+        padding: 5rem 9% 2rem;
+    }
+
+    .home-content {
+        width: 100%;
+        text-align: center;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+    
+    .home-img {
+        position: center;
+        display: flex;
+        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 2rem;
+    }
+
+    .home-img img {
+        position: center;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        animation: floatImage 4s ease-in-out infinite;
+    }
+  
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .text-animate {
+        width: 100%;
+    }
+
+    .home-content p {
+        font-size: 1.6rem;
+    }
+
+    .btn-box {
+        position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 5rem;
+    }
+
+    .social-media {
+        margin-top: 1rem;
+        position: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 80%;
+        height: auto;
+        margin: 0 5rem;
+    }
+}
