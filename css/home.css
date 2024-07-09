@@ -44,6 +44,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .home-content h1 {
@@ -59,7 +61,8 @@
 
 .home-content .text-animate {
     position: relative;
-    width: 52.8rem;
+    width: 100%;
+    max-width: 52.8rem;
 }
 
 .home-content .text-animate span {
@@ -82,7 +85,8 @@
     position: relative;
     display: flex;
     justify-content: space-between; /*align space between sub-elements*/
-    width: 32.0rem;
+    width: 100%;
+    max-width: 32.0rem;
     height: 5rem
 }
 
@@ -141,7 +145,7 @@ span {
     /* bottom: 4rem; */
     /* width: 170px; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .social-media a {
@@ -155,7 +159,7 @@ span {
     border-radius: 50%;
     font-size: 2rem;
     color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
+    margin: 0 1.5rem;
     transition: .5s ease;
 }
 
@@ -167,9 +171,10 @@ span {
 
 /*--------------[home] floating image-------------------*/
 .home-img img {
-    width: 35vw;
+    width: 80%;
+    max-width: 35vw;
     animation: floatImage 4s ease-in-out infinite;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 @keyframes floatImage {
