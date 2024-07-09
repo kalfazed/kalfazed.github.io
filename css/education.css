@@ -13,6 +13,7 @@
     flex-direction: column;
     min-height: auto;
     padding-bottom: 1rem;
+    background: var(--second-bg-color);
 }
 
 .education .education-row {
@@ -139,4 +140,6 @@
 .education-content .content p {
     font-size: 1.5rem;
     padding-top: .5rem;
+    /* word-break: break-all;  */
+    hyphens: auto;
 }

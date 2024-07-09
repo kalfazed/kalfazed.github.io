@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('media-queries.css');
 
 /*--------------[Global] global setting, color, font, margin-------------------*/
 * {
@@ -37,6 +38,12 @@ body {
 section {
     min-height: 100vh;
     padding: 10rem 9% 2rem; /*Top: 10rem, left/right: 9%, bottom: 2rem*/
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
 }
 
 
@@ -78,11 +85,3 @@ section {
 .navbar a.active {
     color: var(--main-color);
 }
-
-#menu-icon {
-    font-size: 3.6rem;
-    color: var(--text-color);
-    cursor: pointer;
-    display: none;
-}
-
