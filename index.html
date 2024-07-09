@@ -68,6 +68,17 @@
                     <h3 class="title">Education</h3>
 
                     <div class="education-box">
+
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class='bx bxs-calendar'></i> 2014-2017</div>
+                                <h3>Bachelar - Beijing Launguage and Culture University, Beijing, China</h3>
+                                <p>
+                                  Faculty of Computer science and Engineering
+                                </p>
+                            </div>
+                        </div>
+
                         <div class="education-content">
                             <div class="content">
                                 <div class="year"><i class='bx bxs-calendar'></i> 2014-2017</div>
@@ -84,134 +95,141 @@
                                 <h3>Ph.D. - Waseda University, Tokyo, Japan</h3>
                                 <p>
                                   Faculty of Computer science and Engineering
-                                </p>
+                                </p
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- column for working experience -->
-                <div class="education-column" id="experience">
-                    <h3 class="title">Working Experience</h3>
+                </div> <!-- education-colummn-->
 
-                    <div class="education-box">
-
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> Jan.2024 ~ Present</div>
-                                <h3>Tech Lead, T2 Auto, Perception model deployment and integration team</h3>
-                                <p>
-                                    T2 auto is a startup company, where most of the software prototype is under development. When I am in T2 auto, 
-                                    I belong to the perception team. My job is to develop a BEVFusion model and deploy the model into NVIDIA 
-                                    architecture. The BEVFusion model uses LiDAR and camera as input sensors. I tried several different tactics 
-                                    to reach high precision and fast inference speed. For example, develop customized BEVPool methods to accelerate 
-                                    the projection from camera view to BEV grid, or use deformable attention as a substitute of BEV Pool.  
-
-                                    Besides, in the aspect of deployment, I also develop some benchmark tools to both training model and deployed model. 
-                                    These benchmark tools contain layer-wise precision analysis, coarse/fine-grained speed analysis, and so on.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> Apr.2023 ~ Present</div>
-                                <h3>Visiting Researcher and Part-time Lecturer, Waseda University</h3>
-                                <p>
-                                    As a part-time lecturer at Waseda University's Graduate School of Fundamental Science and Engineering, 
-                                    I teach one class per week. My subject is C/C++ programming. At the same time, I am also a visiting 
-                                    researcher at Waseda University's research institute. My research interests include Transformer 
-                                    optimization and architecture design.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> Jan.2023 ~ Present</div>
-                                <h3>Online Webinar Lecture (Autonomous driving, TensorRT deployment) </h3>
-                                <p>
-                                    I am coaching an online class in China similar to "Udemy", and offers the cource related to "High Performance 
-                                    Implementation Using CUDA and TensorRT in Autonomous Driving". The content is deployment of various OSS 
-                                    SOTA models using CUDA acceleration methods and TensorRT API. In addition to these, it also includes computer 
-                                    architecture and parallel processing technology.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> Apr.2022 ~ Dec.2023</div>
-                                <h3>Deep learning Engineer/Researcher, Honda Motor Co., Ltd., Intelligent Solution Laboratory</h3>
-                                <p>
-                                    When I was in Honda, I was developing a multi-task DNN model for autonomous driving. The tasks include 
-                                    detection, segmentation, keypoints, optical flow, and tracking. In order to train the network with 
-                                    resource limited dataset, I tried to use several dataset enhancement techniques, such as active learning, 
-                                    pseudo labeling, to optimize the training. Recently, I have started developing BEV. 
-                                    The frameworks used are Darknet and PyTorch. 
-
-                                    Additionally, in order to perform real-time inference on in-vehicle hardware with limited computational 
-                                    resources, I optimized perception's multi-task model to suit the hardware structure. I used C++ to perform 
-                                    parallel processing and asynchronous execution, used CUDA to speed up DNN pre-processing/post-processing, 
-                                    and used TensorRT to optimize each layer of DNN. I also created some custom DNN operations in C++ and CUDA 
-                                    to exploit higher parallelism. Other optimizations include reducing the size of the model using quantization 
-                                    and pruning, and replacing low-density calculations with other calculations within the Transformer and CNN.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> Apr.2020 ~ Mar.2021</div>
-                                <h3>Research Assistant, Graduate School of Information Science and Technology, Waseda University </h3>
-                                <p>
-                                    During this period, I focused on the research that allows programs running on non-volatile memory 
-                                    to always maintain their correct program properties. I proposed a rational implementation 
-                                    method and formally proved that a program based on this implementation method can always 
-                                    operate correctly even in an uncertain execution environment, such as system crash. This goal 
-                                    is achieved by abstracting the memory structure of non-volatile memory, expressing the operation 
-                                    of memory propagation in a mathematical formula, and formally defining the grammar and semantics of 
-                                    the program. This research was published in a peer-reviewed academic journal.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> Apr.2019 ~ Sep.2020</div>
-                                <h3>President, IEEE Eta-Kappa-Nu Mu-Tau Chapter</h3>
-                                <p>
-                                    In September 2018, IEEE's world-class student academic organization called IEEE Eta-Kappa-Nu was 
-                                    founded as Japan's first IEEE student chapter (Mu-Tau Chapter) under Waseda University. I was 
-                                    appointed as president in 2019. While enrolled, I was involved in various activities in 
-                                    collaboration with student chapters in the United States and Europe, and won the Outstanding 
-                                    Chapter Award in Boston, USA in November of the same year.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> Apr.2017 ~ Mar.2020</div>
-                                <h3>Research Associate, Waseda University, Faculty of Fundamental Science and Engineering, Department of Information Science and Technology</h3>
-                                <p>
-                                    By using mathematics to examining whether a compiler is able to maintain the correct behavior 
-                                    and meaning of a program when it automatically parallelizes the program, it is possible to 
-                                    logically infer the execution of parallel programs. After abstractly defining the grammar and 
-                                    semantics of a program, the rationality of parallel program execution was formally defined, 
-                                    and the program could be verified. This research was carried out jointly with INRIA in France 
-                                    and the University of Arizona in the United States, and the contribution were successfully presented 
-                                    at international conferences and in journal. In addition to research, I also provides research 
-                                    guidance and experimental lectures for students.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
+            </div> <!-- education-row-->
     </section>
+
+    <!-- experience section -->
+    <section class="education" id="experience">
+        <div class="education-row">
+            <!-- column for working experience -->
+            <div class="education-column" id="experience">
+                <h3 class="title">Experience</h3>
+
+                <div class="education-box">
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> Jan.2024 ~ Present</div>
+                            <h3>Tech Lead, T2 Auto, Perception model deployment and integration team</h3>
+                            <p>
+                                T2 auto is a startup company, where most of the software prototype is under development. When I am in T2 auto, 
+                                I belong to the perception team. My job is to develop a BEVFusion model and deploy the model into NVIDIA 
+                                architecture. The BEVFusion model uses LiDAR and camera as input sensors. I tried several different tactics 
+                                to reach high precision and fast inference speed. For example, develop customized BEVPool methods to accelerate 
+                                the projection from camera view to BEV grid, or use deformable attention as a substitute of BEV Pool.  
+
+                                Besides, in the aspect of deployment, I also develop some benchmark tools to both training model and deployed model. 
+                                These benchmark tools contain layer-wise precision analysis, coarse/fine-grained speed analysis, and so on.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> Apr.2023 ~ Present</div>
+                            <h3>Visiting Researcher and Part-time Lecturer, Waseda University</h3>
+                            <p>
+                                As a part-time lecturer at Waseda University's Graduate School of Fundamental Science and Engineering, 
+                                I teach one class per week. My subject is C/C++ programming. At the same time, I am also a visiting 
+                                researcher at Waseda University's research institute. My research interests include Transformer 
+                                optimization and architecture design.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> Jan.2023 ~ Present</div>
+                            <h3>Online Webinar Lecture (Autonomous driving, TensorRT deployment) </h3>
+                            <p>
+                                I am coaching an online class in China similar to "Udemy", and offers the cource related to "High Performance 
+                                Implementation Using CUDA and TensorRT in Autonomous Driving". The content is deployment of various OSS 
+                                SOTA models using CUDA acceleration methods and TensorRT API. In addition to these, it also includes computer 
+                                architecture and parallel processing technology.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> Apr.2022 ~ Dec.2023</div>
+                            <h3>Deep learning Engineer/Researcher, Honda Motor Co., Ltd., Intelligent Solution Laboratory</h3>
+                            <p>
+                                When I was in Honda, I was developing a multi-task DNN model for autonomous driving. The tasks include 
+                                detection, segmentation, keypoints, optical flow, and tracking. In order to train the network with 
+                                resource limited dataset, I tried to use several dataset enhancement techniques, such as active learning, 
+                                pseudo labeling, to optimize the training. Recently, I have started developing BEV. 
+                                The frameworks used are Darknet and PyTorch. 
+
+                                Additionally, in order to perform real-time inference on in-vehicle hardware with limited computational 
+                                resources, I optimized perception's multi-task model to suit the hardware structure. I used C++ to perform 
+                                parallel processing and asynchronous execution, used CUDA to speed up DNN pre-processing/post-processing, 
+                                and used TensorRT to optimize each layer of DNN. I also created some custom DNN operations in C++ and CUDA 
+                                to exploit higher parallelism. Other optimizations include reducing the size of the model using quantization 
+                                and pruning, and replacing low-density calculations with other calculations within the Transformer and CNN.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> Apr.2020 ~ Mar.2021</div>
+                            <h3>Research Assistant, Graduate School of Information Science and Technology, Waseda University </h3>
+                            <p>
+                                During this period, I focused on the research that allows programs running on non-volatile memory 
+                                to always maintain their correct program properties. I proposed a rational implementation 
+                                method and formally proved that a program based on this implementation method can always 
+                                operate correctly even in an uncertain execution environment, such as system crash. This goal 
+                                is achieved by abstracting the memory structure of non-volatile memory, expressing the operation 
+                                of memory propagation in a mathematical formula, and formally defining the grammar and semantics of 
+                                the program. This research was published in a peer-reviewed academic journal.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> Apr.2019 ~ Sep.2020</div>
+                            <h3>President, IEEE Eta-Kappa-Nu Mu-Tau Chapter</h3>
+                            <p>
+                                In September 2018, IEEE's world-class student academic organization called IEEE Eta-Kappa-Nu was 
+                                founded as Japan's first IEEE student chapter (Mu-Tau Chapter) under Waseda University. I was 
+                                appointed as president in 2019. While enrolled, I was involved in various activities in 
+                                collaboration with student chapters in the United States and Europe, and won the Outstanding 
+                                Chapter Award in Boston, USA in November of the same year.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> Apr.2017 ~ Mar.2020</div>
+                            <h3>Research Associate, Waseda University, Faculty of Fundamental Science and Engineering, Department of Information Science and Technology</h3>
+                            <p>
+                                By using mathematics to examining whether a compiler is able to maintain the correct behavior 
+                                and meaning of a program when it automatically parallelizes the program, it is possible to 
+                                logically infer the execution of parallel programs. After abstractly defining the grammar and 
+                                semantics of a program, the rationality of parallel program execution was formally defined, 
+                                and the program could be verified. This research was carried out jointly with INRIA in France 
+                                and the University of Arizona in the United States, and the contribution were successfully presented 
+                                at international conferences and in journal. In addition to research, I also provides research 
+                                guidance and experimental lectures for students.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
 
     <!-- scroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
