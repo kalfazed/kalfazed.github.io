@@ -320,21 +320,22 @@
     }
     
     .home-img {
-        position: center;
+        position: relative;
         display: flex;
         align-items: center;
-        margin-top: 10rem;
-        margin-bottom: 2rem;
+        width: 100%;
+        max-width: 70%;
+        height: auto;
     }
 
     .home-img img {
         position: center;
         display: flex;
         align-items: center;
-        width: 100%;
-        max-width: 100%;
-        margin: 0 0rem;
+        width: 80%;
+        max-width: 80%;
         animation: floatImage 4s ease-in-out infinite;
+        margin: 0 auto;
     }
   
     .home-content h1 {
@@ -388,4 +389,15 @@
         margin-top: 2rem;
     }
 
+    .education-column .title {
+        font-size: 2.5rem;
+        margin: 0 0 1rem 0rem;
+    }
+
+    .content h3 {
+        font-size: 2.0rem;
+    }
+    .content p {
+        font-size: 1.5rem;
+    }
 }
