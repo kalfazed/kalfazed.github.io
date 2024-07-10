@@ -114,7 +114,7 @@
 
 
 /*--------------[home] Media Queries (for different browser width)------------- */
-@media (max-width: 768px) {
+@media (max-width: 100rem) {
     .header {
         padding: 2rem 5%;
     }
@@ -243,10 +243,15 @@
         width: 100%;
         max-width: 100%;
         height: auto;
+        min-height: auto;
+        max-height: 100%;
         border-radius: 8px; /* Optional: Add border radius to the image */
         margin-bottom: 2rem;
     }
 
+    .education-content .content-img img:nth-child(2) {
+        display: none;
+    }
     .education-content .content-img img:nth-child(3) {
         display: none;
     }
@@ -266,12 +271,16 @@
     .education-content .work-img img {
         display: block;
         width: 100%;
+        min-width: auto;
         max-width: 100%;
         height: auto;
+        min-height: auto;
+        max-height: 100%;
         border-radius: 8px; /* Optional: Add border radius to the image */
         margin-right: 1rem;
         margin-bottom: 2rem;
     }
+
     .education-content .work-img img:nth-child(3) {
         display: none;
     }
