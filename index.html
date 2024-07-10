@@ -143,13 +143,16 @@
                             <div class="year"><i class='bx bxs-calendar'></i> Jan.2024 ~ Present</div>
                             <h3>Tech Lead, T2 Auto, Perception model deployment and integration team</h3>
                             <p>
-                                T2 auto is a startup company, where most of the software prototype is under development. When I am in T2 auto, 
-                                I belong to the perception team. My job is to develop a BEVFusion model and deploy the model into NVIDIA 
-                                architecture. The BEVFusion model uses LiDAR and camera as input sensors. I tried several different tactics 
-                                to reach high precision and fast inference speed. For example, develop customized BEVPool methods to accelerate 
-                                the projection from camera view to BEV grid, or use deformable attention as a substitute of BEV Pool.  
+                                T2 Auto is a startup company, where most of the software prototypes are under development. 
+                                When I was in T2 Auto, I belong to the perception team and work as a Technical Lead to lead
+                                the team from the aspect of both techniques and management. My job was to develop a training and 
+                                deployment prototype of BEVFusion meta-architecture. Then optimized the model into NVIDIA 
+                                architecture to make sure the inference time was fast. The BEVFusion model uses LiDARs and cameras 
+                                as input sensors. I tried several different tactics to reach high precision and fast inference speed. 
+                                For example, develop customized BEVPool methods to accelerate the projection from camera view to BEV 
+                                grid, or use deformable attention as a substitute for BEV Pool.  <br><br>
 
-                                Besides, in the aspect of deployment, I also develop some benchmark tools to both training model and deployed model. 
+                                Besides, in the aspect of deployment, I also develop some benchmark tools for both the training model and the deployed model. 
                                 These benchmark tools contain layer-wise precision analysis, coarse/fine-grained speed analysis, and so on.
                             </p>
                         </div>
@@ -188,7 +191,7 @@
                                 I am coaching an online class in China similar to "Udemy", and it offers a course related to "High Performance 
                                 Implementation Using CUDA and TensorRT in Autonomous Driving". The motivation for starting this course is 
                                 to help people quickly understand the key to reaching high performance in edge computing. Though this 
-                                course mainly focuses on NVIDIA, the idea described in this course is also applicable to other edge devices.
+                                course mainly focuses on NVIDIA, the idea described in this course is also applicable to other edge devices.<br><br>
 
                                 This course starts from the basics of parallel computing and computer architecture, such as describing how 
                                 CUDA Core and Tensor Core work and using the "Roofline Model" to analyze the computation efficiency of operations. 
@@ -205,17 +208,17 @@
                             <h3>Deep learning Engineer/Researcher, Honda Motor Co., Ltd., Intelligent Solution Laboratory</h3>
                             <p>
                                 When I was in Honda, I was developing a multi-task DNN model for autonomous driving. The tasks include 
-                                detection, segmentation, keypoints, optical flow, and tracking. In order to train the network with 
-                                resource limited dataset, I tried to use several dataset enhancement techniques, such as active learning, 
-                                pseudo labeling, to optimize the training. Recently, I have started developing BEV. 
-                                The frameworks used are Darknet and PyTorch. 
+                                detection, segmentation, key-points, optical flow, and tracking. To train the network with 
+                                resource resource-limited datasets, I tried to use several dataset enhancement techniques, such as active learning, 
+                                and pseudo pseudo-labeling, to optimize the training. Recently, I have started developing BEV. 
+                                The frameworks used are Darknet and PyTorch. <br><br>
 
-                                Additionally, in order to perform real-time inference on in-vehicle hardware with limited computational 
-                                resources, I optimized perception's multi-task model to suit the hardware structure. I used C++ to perform 
+                                Additionally, to perform real-time inference on in-vehicle hardware with limited computational 
+                                resources, I optimized the perception's multi-task model to suit the hardware structure. I used C++ to perform 
                                 parallel processing and asynchronous execution, used CUDA to speed up DNN pre-processing/post-processing, 
                                 and used TensorRT to optimize each layer of DNN. I also created some custom DNN operations in C++ and CUDA 
                                 to exploit higher parallelism. Other optimizations include reducing the size of the model using quantization 
-                                and pruning, and replacing low-density calculations with other calculations within the Transformer and CNN.
+                                , pruning and replacing low-density calculations with other calculations within the Transformer and CNN.
                             </p>
                         </div>
                     </div>
@@ -225,13 +228,21 @@
                             <div class="year"><i class='bx bxs-calendar'></i> Apr.2020 ~ Mar.2021</div>
                             <h3>Research Assistant, Graduate School of Information Science and Technology, Waseda University </h3>
                             <p>
-                                During this period, I focused on the research that allows programs running on non-volatile memory 
-                                to always maintain their correct program properties. I proposed a rational implementation 
-                                method and formally proved that a program based on this implementation method can always 
-                                operate correctly even in an uncertain execution environment, such as system crash. This goal 
-                                is achieved by abstracting the memory structure of non-volatile memory, expressing the operation 
-                                of memory propagation in a mathematical formula, and formally defining the grammar and semantics of 
-                                the program. This research was published in a peer-reviewed academic journal.
+                                During this period, I focused on the research, which is about mathematically proving the correctness 
+                                of program behaviors, where the programs must meet the relaxed memory consistency and persistency on 
+                                volatile memory(VM) and non-volatile memory(NVM). Proving the memory propagation of a parallel or concurrent 
+                                program is a little bit tricky because of the non-deterministic behavior of the program. For example, in 
+                                a concurrent program, the order of memory operation issues could be different from the order that these memory 
+                                operations are done, and the order of status changes on hardware. It is common to use some synchronization methods
+                                (barrier, fence, etc) to restrict the order so that the program behavior is deterministic somehow. However, an 
+                                aggressive synchronization combination may lead to low performance of a program. As a result, the program cannot
+                                benefit from concurrency. <br><br>
+
+                                To handle this problem, I published an abstracted memory model to show the relaxed memory propagation flows, and a 
+                                set of operational semantics to formulate the non-deterministic behavior of concurrent programs. I also proposed a 
+                                mechanism to fully exploit the parallelism of memory propagation in concurrent programs, and prove the correctness 
+                                of these programs mathematically. This research was finally published in a computer science journal and was awarded 
+                                in the computer science academic community.
                             </p>
                         </div>
                         <div class="work-img">
@@ -244,18 +255,28 @@
 
                     <div class="working-content">
                         <div class="work-img">
-                            <img src="images/IEEE-HKN.jpg" alt="">
+                            <img src="images/IEEE-HKN in boston.jpg" alt="">
                                 <figcaption class="caption">Being horned as Key Chapter, we were invited to join the IEEE HKN Student Leadership Conference in Boston, Massachusetts, USA</figcaption>
+                            <img src="images/IEEE-HKN certificate.jpg" alt="">
+                                <figcaption class="caption">The IEEE Eta Kappa Nu certificate</figcaption>
                         </div>
                         <div class="content">
                             <div class="year"><i class='bx bxs-calendar'></i> Apr.2019 ~ Sep.2020</div>
                             <h3>President, IEEE Eta-Kappa-Nu Mu-Tau Chapter</h3>
                             <p>
-                                In September 2018, IEEE's world-class student academic organization called IEEE Eta-Kappa-Nu was 
-                                founded as Japan's first IEEE student chapter (Mu-Tau Chapter) under Waseda University. I was 
-                                appointed as president in 2019. While enrolled, I was involved in various activities in 
-                                collaboration with student chapters in the United States and Europe, and won the Outstanding 
-                                Chapter Award in Boston, USA in November of the same year.
+                                In 2018, being supervised by Prof. Hironori Kasahara, who was president of IEEE Computer Society and Vice president of 
+                                Waseda University, I and some partners established the first IEEE HKN Chapter in Japan, named Mu Tau Chapter! <br><br>
+                                
+                                IEEE-HKN is short for IEEE Eta Kappa Nu, which is the honor society of the Institute of Electrical and Electronics Engineers (IEEE),
+                                and promotes excellence in the profession and in education with ideals of Scholarship, Character and Attitude. It 
+                                recognizes outstanding students, alumni, and professionals who have made significant contributions to the fields of 
+                                electrical engineering, computer engineering, and other IEEE-associated fields. IEEE HKN was founded on 28 October 1904, 
+                                there are over 260 IEEE-HKN chapters worldwide, located at universities and colleges that have accredited programs in 
+                                electrical and computer engineering and related fields. <br><br>
+                                
+                                I was president of Mu Tau Chapter, and our Chapter has achieved Key Chapter Status for 2019! We were invited 
+                                to join HKN's Annual Student Leadership Conference, which was held in Nov 2019 in Boston, Massachusetts, USA. We 
+                                received an award at the conference there. 
                             </p>
                         </div>
                     </div>
@@ -265,14 +286,20 @@
                             <div class="year"><i class='bx bxs-calendar'></i> Apr.2017 ~ Mar.2020</div>
                             <h3>Research Associate, Waseda University, Faculty of Fundamental Science and Engineering</h3>
                             <p>
-                                By using mathematics to examining whether a compiler is able to maintain the correct behavior 
-                                and meaning of a program when it automatically parallelizes the program, it is possible to 
-                                logically infer the execution of parallel programs. After abstractly defining the grammar and 
-                                semantics of a program, the rationality of parallel program execution was formally defined, 
-                                and the program could be verified. This research was carried out jointly with INRIA in France 
-                                and the University of Arizona in the United States, and the contribution were successfully presented 
-                                at international conferences and in journal. In addition to research, I also provides research 
-                                guidance and experimental lectures for students.
+                                If a compiler can automatically parallelize a program, it is important to make sure the optimized program works the 
+                                same as the one before the optimization. In industry, it is common to use unit tests to check the code is working 
+                                correctly as expected by the programmer. However, it is nearly impossible to take over all the possible unexpected 
+                                behavior and check the correctness, especially for corner cases. Different from the industry, it is generally known 
+                                as a common approach in academia that uses mathematics to examine whether a compiler can maintain the correct behavior 
+                                and meaning of a program. As long as we can abstractly define the grammar and semantics of parallel and sequential 
+                                programs, and formally define the execution of programs, it is possible to logically infer the execution of parallel 
+                                programs without running them indeed. <br><br>
+
+                                During this period, I focused on the validation of a parallelizing compiler, which exploits the parallelism of a sequential 
+                                program by using a set of techniques, such as calculating the Earliest Execution Condition (EEC) of different blocks in a 
+                                program, pointer analysis, loop optimization, task fusion, and so on. This research was carried out jointly with INRIA 
+                                in France and the University of Arizona in the United States, and the contributions were successfully presented at 
+                                international conferences and in a journal.
                             </p>
                         </div>
                         <div class="work-img">
