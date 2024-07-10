@@ -114,7 +114,7 @@
 
 
 /*--------------[home] Media Queries (for different browser width)------------- */
-@media (max-width: 100rem) {
+@media (max-width: 900px) {
     .header {
         padding: 2rem 5%;
     }
