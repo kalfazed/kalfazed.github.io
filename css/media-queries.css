@@ -125,8 +125,6 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        /* margin-top: 10rem; */
-        margin-bottom: 2rem;
         width: 100%;
         max-width: 100%;
     }
@@ -140,9 +138,7 @@
         min-height: auto;
         max-height: 100%;
         border-radius: 8px; /* Optional: Add border radius to the image */
-        margin-right: 1rem;
-        margin-bottom: 2rem;
-        padding: 0 1.25rem 1.25rem 1.25rem
+        padding: 0 1.25rem 0rem 1.25rem
     }
 }
 

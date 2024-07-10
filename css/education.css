@@ -102,7 +102,8 @@
     height: auto;
     border-radius: 8px; /* Optional: Add border radius to the image */
     margin-right: 1rem; /* Adjust as needed for spacing between images */
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem; /* Leave space for caption*/
+    margin-top: 1.0rem; /* Make sure images are not sticked together*/
 }
 
 .content {

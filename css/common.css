@@ -85,3 +85,9 @@ section {
 .navbar a.active {
     color: var(--main-color);
 }
+
+.caption {
+    font-size: 1.3rem;
+    padding: 0 2rem 1rem 2rem;
+    font-style: italic;
+}
