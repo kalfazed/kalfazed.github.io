@@ -1,12 +1,3 @@
-/*==================== typed js ====================*/
-const typed = new Typed('.multiple-text', {
-    strings: ['Researcher', 'Lecturer', 'Developer'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
-    loop: true
-});
-
 /*==================== scroll reveal ====================*/
 ScrollReveal({
     // reset: true,
@@ -21,13 +12,23 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 /*==================== toggle icon navbar ====================*/
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('.navbar');
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
-};
+// let menuIconHobbies = document.querySelector('#menu-icon-hobbies');
+// menuIconHobbies.onclick = () => {
+//     menuIconHobbies.classList.toggle('bx-x');
+//     document.querySelector('.navbar').classList.toggle('active'); // Uncomment if needed
+// };
 
+document.addEventListener('DOMContentLoaded', function() {
+    let menuIconHobbies = document.querySelector('#menu-icon-hobbies');
+    let navbar = document.querySelector('.navbar');
+
+    if (menuIconHobbies) {
+        menuIconHobbies.addEventListener('click', function() {
+            menuIconHobbies.classList.toggle('bx-x');
+            navbar.classList.toggle('active');
+        });
+    }
+});
 
 /*==================== scroll sections active link ====================*/
 let sections = document.querySelectorAll('section');
@@ -56,19 +57,3 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
 };
-
-/*==================== Download Resume ====================*/
-document.getElementById('download-resume').addEventListener('click', function() {
-    // Replace with the URL/path of your file in the repository
-    const filePath = 'contents/Resume Jixin Han.pdf';
-
-    fetch(filePath)
-        .then(response => response.blob())
-        .then(blob => {
-            const link = document.createElement('a');
-            link.href = URL.createObjectURL(blob);
-            link.download = 'Resume Jixin Han.pdf'; // Set the default filename here
-            link.click();
-        })
-        .catch(error => console.error('Error downloading file:', error));
-});

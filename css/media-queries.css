@@ -39,6 +39,10 @@
         display: block;
     }
 
+    #menu-icon-hobbies {
+        display: block;
+    }
+
     .navbar { /* Pull down menu of navigation*/
         position: absolute;
         top: 100%;
