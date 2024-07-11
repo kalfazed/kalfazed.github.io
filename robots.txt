@@ -1,2 +1,3 @@
 User-agent: *
 Disallow: 
+Sitemap: https://kalfazed.github.io/sitemap.xml
