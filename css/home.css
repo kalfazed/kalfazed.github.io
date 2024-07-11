@@ -1,5 +1,10 @@
 @import url('common.css');
 
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem; /*Top: 10rem, left/right: 9%, bottom: 2rem*/
+}
+
 /*--------------[home] home content txt-------------------*/
 .home {
     display: flex;

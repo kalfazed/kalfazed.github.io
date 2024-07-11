@@ -198,9 +198,17 @@
         display: none;
     }
 
+    .work-img {
+        padding: 0rem 0rem;
+    }
+
 
     .education-content .work-img img:nth-child(3) {
         display: none;
+    }
+
+    .caption {
+        padding: 0rem 0rem 0rem 0rem;
     }
 
     .portfolio-container {
@@ -210,6 +218,9 @@
 }
 
 @media (max-width: 480px) {
+    section {
+        padding: 10rem 5% 2rem; /*Top: 10rem, left/right: 5%, bottom: 2rem*/
+    }
     .header {
         padding: 2rem 5%;
     }
@@ -333,5 +344,20 @@
         /* min-height: auto;
         max-height: 100%; */
         border-radius: 8px; /* Optional: Add border radius to the image */
+    }
+
+    .work-img {
+        order: 2;
+        position: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        padding: 0rem 0rem;
+    }
+
+    .caption {
+        font-size: 1.1rem;
     }
 }
