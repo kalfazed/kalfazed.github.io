@@ -67,7 +67,7 @@ document.getElementById('download-resume').addEventListener('click', function() 
         .then(blob => {
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'Resume-Jixin-Han-2024.06.pdf'; // Set the default filename here
+            link.download = 'Resume-Jixin-Han-2024-06.pdf'; // Set the default filename here
             link.click();
         })
         .catch(error => console.error('Error downloading file:', error));
