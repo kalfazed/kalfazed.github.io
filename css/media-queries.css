@@ -379,6 +379,9 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    /* 确保正确的宽高比 */
+    aspect-ratio: 8/3;
+    object-fit: cover;
 }
 
 .video-container video:hover {
@@ -410,6 +413,11 @@
         flex: 1 1 100%;
         max-width: 100%;
         min-width: auto;
+        /* 移动设备宽高比设置 */
+        aspect-ratio: 8/3;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 }
 
