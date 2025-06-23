@@ -28,6 +28,14 @@
         border-radius: 8px; /* Optional: Add border radius to the image */
     }
 
+    /* 确保视频容器和caption按正确顺序显示 */
+    .video-container {
+        order: 2;
+    }
+    
+    .video-container + .caption {
+        order: 3;
+    }
 }
 
 @media (max-width: 70rem) {
@@ -202,6 +210,14 @@
         padding: 0rem 0rem;
     }
 
+    /* 确保视频容器和caption按正确顺序显示 */
+    .video-container {
+        order: 2;
+    }
+    
+    .video-container + .caption {
+        order: 3;
+    }
 
     .education-content .work-img img:nth-child(3) {
         display: none;
@@ -431,5 +447,33 @@
     .video-container video {
         border-radius: 6px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* 视频caption样式 */
+.video-container + .caption {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-style: italic;
+}
+
+/* 小屏幕时调整视频caption */
+@media (max-width: 768px) {
+    .video-container + .caption {
+        font-size: 1.1rem;
+        margin-top: 0.3rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+/* 超小屏幕时进一步调整 */
+@media (max-width: 480px) {
+    .video-container + .caption {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.6rem;
     }
 }
