@@ -60,14 +60,14 @@ window.onscroll = () => {
 /*==================== Download Resume ====================*/
 document.getElementById('download-resume').addEventListener('click', function() {
     // Replace with the URL/path of your file in the repository
-    const filePath = 'contents/Resume-Jixin-Han-2024-06.pdf';
+    const filePath = 'contents/Resume-Jixin-Han-2025-06.pdf';
 
     fetch(filePath)
         .then(response => response.blob())
         .then(blob => {
             const link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'Resume-Jixin-Han-2024-06.pdf'; // Set the default filename here
+            link.download = 'Resume-Jixin-Han-2025-06.pdf'; // Set the default filename here
             link.click();
         })
         .catch(error => console.error('Error downloading file:', error));
