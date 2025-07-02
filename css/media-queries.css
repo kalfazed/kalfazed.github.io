@@ -522,3 +522,42 @@
         margin-bottom: 0.6rem;
     }
 }
+
+/* Fullscreen video styles */
+video::-webkit-media-controls-fullscreen-button {
+    display: block;
+}
+
+video::-webkit-media-controls {
+    display: flex;
+}
+
+/* Ensure videos scale properly in fullscreen mode */
+video:fullscreen {
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: contain !important;
+    background: #000;
+}
+
+video:-webkit-full-screen {
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: contain !important;
+    background: #000;
+}
+
+video:-moz-full-screen {
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: contain !important;
+    background: #000;
+}
+
+/* For browsers that support the newer fullscreen API */
+video:fullscreen {
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: contain !important;
+    background: #000;
+}
