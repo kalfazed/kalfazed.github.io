@@ -3,6 +3,7 @@
 /*--------------[home] Media Queries (for different browser width)------------- */
 @media (max-width: 90rem) {
     .working-content {
+        display: flex;
         flex-direction: column;
         padding: 0rem 0rem 2rem;
     }
@@ -29,13 +30,13 @@
     }
 
     /* 确保视频容器和caption按正确顺序显示 */
-    .video-container {
+    /* .video-container {
         order: 2;
     }
     
     .video-container + .caption {
         order: 3;
-    }
+    } */
 }
 
 @media (max-width: 70rem) {
@@ -211,13 +212,13 @@
     }
 
     /* 确保视频容器和caption按正确顺序显示 */
-    .video-container {
+    /* .video-container {
         order: 2;
     }
     
     .video-container + .caption {
         order: 3;
-    }
+    } */
 
     .education-content .work-img img:nth-child(3) {
         display: none;
@@ -378,19 +379,30 @@
     }
 }
 
+/* Override working-content layout when it contains videos */
+.working-content.with-videos {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+
 .video-container {
     display: flex;
+    flex-direction: row; /* 明确设置为水平排列 */
     gap: 1.5rem;
     margin-top: 1.5rem;
     flex-wrap: wrap;
     justify-content: space-between;
     order: 2; /* 确保视频在文字下面 */
+    width: auto; /* Match the width of work-img */
+    margin-left: 3rem; /* Match the margin of work-img */
+    margin-right: 3rem; /* Match the margin of work-img */
 }
 
 .video-container video {
     flex: 0 1 calc(50% - 0.75rem); /* 左右各占50%，减去间距的一半 */
     max-width: calc(50% - 0.75rem);
-    min-width: 300px; /* 设置最小宽度 */
+    min-width: 280px; /* 降低默认最小宽度 */
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -398,6 +410,10 @@
     /* 确保正确的宽高比 */
     aspect-ratio: 8/3;
     object-fit: cover;
+    /* 大屏幕时让video填满container宽度 */
+    width: 100%;
+    min-width: auto;
+    max-width: none;
 }
 
 .video-container video:hover {
@@ -405,7 +421,7 @@
 }
 
 /* 中等屏幕时调整间距 */
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 769px) {
     .video-container {
         gap: 1rem;
     }
@@ -413,25 +429,48 @@
     .video-container video {
         flex: 0 1 calc(50% - 0.5rem);
         max-width: calc(50% - 0.5rem);
-        min-width: 250px;
+        min-width: 200px; /* 降低最小宽度，让视频在中等屏幕时更大 */
+        width: 25vw; /* Slightly smaller on medium screens */
+        min-width: 20rem;
+        max-width: 25rem;
+    }
+}
+
+/* 中窄屏幕时优化布局 */
+@media (max-width: 900px) and (min-width: 769px) {
+    .video-container {
+        gap: 0.8rem;
+    }
+    
+    .video-container video {
+        flex: 0 1 calc(50% - 0.4rem);
+        max-width: calc(50% - 0.4rem);
+        min-width: 180px; /* 进一步降低最小宽度 */
+        width: 22vw; /* Even smaller on narrow screens */
+        min-width: 18rem;
+        max-width: 22rem;
     }
 }
 
 /* 小屏幕时改为垂直排列 */
 @media (max-width: 768px) {
     .video-container {
-        flex-direction: column;
+        flex-direction: column !important;
+        flex-wrap: nowrap !important; /* 确保不换行 */
         gap: 1rem;
         order: 2; /* 确保在小屏幕时视频也在文字下面 */
+        width: auto; /* Keep the right column positioning */
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
 
     .video-container video {
-        flex: 1 1 100%;
-        max-width: 100%;
-        min-width: auto;
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+        min-width: auto !important;
         /* 移动设备宽高比设置 */
         aspect-ratio: 8/3;
-        width: 100%;
+        width: 100% !important;
         height: auto;
         object-fit: cover;
     }
@@ -440,29 +479,35 @@
 /* 超小屏幕时进一步优化 */
 @media (max-width: 480px) {
     .video-container {
+        flex-direction: column !important;
+        flex-wrap: nowrap !important; /* 确保不换行 */
         gap: 0.8rem;
         margin-top: 1rem;
     }
     
     .video-container video {
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
         border-radius: 6px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     }
 }
 
 /* 视频caption样式 */
-.video-container + .caption {
+.video-container .caption {
     text-align: center;
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     font-size: 1.2rem;
     color: var(--text-color);
     font-style: italic;
+    width: 100%;
 }
 
 /* 小屏幕时调整视频caption */
 @media (max-width: 768px) {
-    .video-container + .caption {
+    .video-container .caption {
         font-size: 1.1rem;
         margin-top: 0.3rem;
         margin-bottom: 0.8rem;
@@ -471,7 +516,7 @@
 
 /* 超小屏幕时进一步调整 */
 @media (max-width: 480px) {
-    .video-container + .caption {
+    .video-container .caption {
         font-size: 1rem;
         margin-top: 0.2rem;
         margin-bottom: 0.6rem;
